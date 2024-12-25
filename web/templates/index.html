@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+{% block title %}Bosh sahifaaa{% endblock %}
+{% block content %}
+{% load static %}
+
+  <!-- ======= Hero Section ======= -->
+  <div class="video-container">
+    <video autoplay muted>
+      <source src="{% static 'media/videos/kirish.mp4'%}" type="video/mp4">
+    </video>
+  </div>
+<!--  <section >-->
+<!--  </section>-->
+
+        <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+      <h4>Hamkorlarimiz</h4>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static 'media/images/clients/MV.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'media/images/clients/iiv.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'media/images/clients/chegara.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'media/images/clients/mchs.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'media/images/clients/MG.png'%}" class="img-fluid" alt=""></div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{% static 'media/images/about.jpg'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Jangavor tayyorgarlikni oshirish uchun bizda sizni qiziqtirgan barcha mahsulotlar mavjud.</h3>
+
+            <ul>
+              <li><i class="ri-check-double-line"></i> Interaktiv o'q otish tiri</li>
+              <li><i class="ri-check-double-line"></i> Lazerli tir</li>
+              <li><i class="ri-check-double-line"></i> Panoramali tir</li>
+              <li><i class="ri-check-double-line"></i> Mobil tir</li>
+              <li><i class="ri-check-double-line"></i> VR tir</li>
+              <li><i class="ri-check-double-line"></i> Desantchilar uchun simulyator</li>
+              <li><i class="ri-check-double-line"></i> PZRK simulyatori</li>
+              <li><i class="ri-check-double-line"></i> Zirxli mashinalar simulyatorlari</li>
+              <li><i class="ri-check-double-line"></i> Dala maydonida otish uchun qurilmalar</li>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Loyihalar</h2>
+          <p>Mahsulotlarimiz</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <a href="{% url 'int_tir' %}">
+              <img width="300" height="150" src="{% static 'media/images/products/tir_in.png'%}">
+              </a>
+              <h4><a  href="{% url 'int_tir' %}">Interaktiv o'q otish tiri.</a></h4>
+              <p>Interaktiv o'q otish tiri barcha yopiq turdagi tirlarni jamlanmasidir</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <a href="{% url 'laser_tir' %}">
+              <img width="300" height="150" src="{% static 'media/images/products/pkst.png'%}">
+              </a>
+              <h4><a href="{% url 'laser_tir' %}">Lazer o'q otish tiri</a></h4>
+              <p>Lazerdan o'q otish tiri boshlang'ich otish tayyorgarligi uchun</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <a href="{% url 'panorama' %}">
+              <img width="300" height="150" src="{% static 'media/images/products/panaram.png'%}">
+              </a>
+              <h4><a href="{% url 'panorama' %}">Panoramali tir</a></h4>
+              <p>Panoramali tir taktik tayyorgarlik uchun ishlab chiqilgan</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <a href="{% url 'mobil' %}">
+              <img width="300" height="150" src="{% static 'media/images/products/mobil.png'%}">
+              </a>
+              <h4><a href="{% url 'mobil' %}">Sayyor tir</a></h4>
+              <p>Sayyor tirni siz istalgan xonaga olib borib ishlatishingiz mumkin</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <a href="{% url 'vr' %}">
+              <img width="300" height="150" src="{% static 'media/images/products/vr.png'%}">
+              </a>
+              <h4><a href="{% url 'vr' %}">VR tir</a></h4>
+              <p>VR tir siz xohlagan joyga yurib o'q otish mashg'ulotlarini bajarishingiz mumkin</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <a href="{% url 'desant' %}">
+              <img width="300" height="150" src="{% static 'media/images/products/desant.png'%}">
+              </a>
+              <h4><a href="{% url 'desant' %}">Desantchilar tayyorlash simulyatori</a></h4>
+              <p>Havodan yerga tushgungacha barcha amallarni bajaruvchi desantchilar simulyatori</p>
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <a href="{% url 'pzrk' %}">
+              <img width="300" height="150" src="{% static 'media/images/products/PZRK.png'%}">
+              </a>
+              <h4><a href="{% url 'pzrk' %}">PZRK IGLA-2</a></h4>
+              <p>PZRK IGLA-2 trenajori</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <a href="{% url 'btr' %}">
+              <img width="300" height="150" src="{% static 'media/images/products/btr.jpg'%}">
+              </a>
+              <h4><a href="{% url 'btr' %}">Zirxli mashinalar trenajori</a></h4>
+              <p>BMP-2 va BTR 80 trenajorlari</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <a href="{% url 'dpm' %}">
+              <img width="300" height="150" src="{% static 'media/images/products/dpm.jpg'%}">
+              </a>
+              <h4><a href="{% url 'dpm' %}">Nishon ko'tarish</a></h4>
+              <p>Dala sharoitida nishonlarni ko'tarish qurilmasi</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{% static 'media/images/maps.jpg'%}" class="img-fluid" alt="">
+          </div>
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Bugungi kunga kelib o'rnatilgan mahsulotlarimiz soni</h3>
+              <p>
+                Bugungi kunga kelib 40 dan ziyod mijozlar bilan ishlab kelmoqda
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Mijozlarmiz biz yetkazib bergan mahsulotdan rozi bo'lganlar soni</strong> </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Xil turdagi loyihlar ishlab chiqilgan</strong> </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Yillik tajribaga egamiz</strong> </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Mukofatlar</strong> Innovatsion ko'rgazmalardagi mukofatlar</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+<!--          <h2>Contact</h2>-->
+          <p>Aloqa uchun</p>
+        </div>
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.324569672267!2d69.207446!3d41.281278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef6f8594898a1%3A0x52a230b0545e3b93!2s41%C2%B016%2752.6%22N%2069%C2%B012%2726.3%22E!5e0!3m2!1sen!2sus!4v1677584215152!5m2!1sen!2sus" frameborder="0" allowfullscreen=""></iframe>
+
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Joylashuv:</h4>
+                <p>Toshkent Chilonzor S Kvartal 52 UY</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>sherzodkhiva@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Telefon:</h4>
+                <p>+99 8 90 956 49 09</p>
+                <p>+99 8 97 490 08 50</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Ism" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Pochta" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Mavzu" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Xabar" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Xabarni yuborish</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+{% endblock %}
