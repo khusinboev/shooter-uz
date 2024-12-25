@@ -2,4 +2,4 @@ import os
 import sys
 
 
-from mysite.wsgi import application
+from config.wsgi import application
