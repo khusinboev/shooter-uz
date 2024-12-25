@@ -138,15 +138,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-MEDIA_URL = '/static/media/'
+MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "web/static",  # Statik fayllar joylashgan papka
+    BASE_DIR / "static",  # Statik fayllar joylashgan papka
 ]
 STATIC_ROOT = BASE_DIR / "staticfiles"  # collectstatic buyrug'idan so'ng fayllar uchun
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

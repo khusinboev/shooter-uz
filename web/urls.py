@@ -16,4 +16,7 @@ urlpatterns = [
     path('mobil', mobil, name='mobil'),
     path('pzrk', pzrk, name='pzrk'),
     path('vr', vr, name='vr'),
-]# + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
