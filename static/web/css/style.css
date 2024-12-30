@@ -335,8 +335,10 @@ h6 {
 --------------------------------------------------------------*/
 /* Responsive Styles */
 video {
-    width: 100%; /* Make the video width fill the container */
-    display: block;
+    max-width: 100%;
+    height: auto;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
 }
 
 img {
