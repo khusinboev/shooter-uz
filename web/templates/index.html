@@ -1,13 +1,65 @@
-{% extends 'base.html' %}
-{% block title %}Bosh sahifaaa{% endblock %}
-{% block content %}
+<!DOCTYPE html>
 {% load static %}
 
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Shooter</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="media/images/icon.png" rel="icon">
+  <link href="media/images/icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'web/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'web/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'web/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'web/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <a href="#" class="logo me-auto me-lg-0"><img width="150" height="200" src="media/images/icons/icon2.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Bosh sahifa</a></li>
+          <li><a class="nav-link scrollto" href="#about">Mahsulotlar</a></li>
+          <li><a class="nav-link scrollto" href="#services">Xizmat ko'rsatish</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Aloqa</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <!--<a href="#about" class="get-started-btn scrollto">Get Started</a>-->
+
+    </div>
+  </header><!-- End Header -->
+
+
   <!-- ======= Hero Section ======= -->
-  <div class="video-container" >
-    <video autoplay muted>
-      <source src="media/videos/kirish.mp4" type="video/mp4">
-    </video>
+  <div class="video-container">
+<!--    <video autoplay muted>-->
+<!--      <source src="{% static 'assets/img/1.mp4'%}" type="video/mp4">-->
+<!--    </video>-->
+    <img src="{% static 'assets/img/about.jpg'%}" class="img-fluid" alt="">
   </div>
 <!--  <section >-->
 <!--  </section>-->
@@ -19,11 +71,13 @@
 
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="media/images/clients/MV.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="media/images/clients/iiv.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="media/images/clients/chegara.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="media/images/clients/mchs.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="media/images/clients/MG.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide">
+                <img src="{% static 'assets/img/clients/MV.png' %}" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/iiv.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/chegara.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/mchs.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/MG.png'%}" class="img-fluid" alt=""></div>
 
           </div>
           <div class="swiper-pagination"></div>
@@ -38,7 +92,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="media/images/about.jpg" class="img-fluid" alt="">
+            <img src="{% static 'assets/img/about.jpg'%}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <h3>Jangavor tayyorgarlikni oshirish uchun bizda sizni qiziqtirgan barcha mahsulotlar mavjud.</h3>
@@ -74,7 +128,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <a href="{% url 'int_tir' %}">
-              <img width="300" height="150" src="media/images/products/tir_in.png">
+              <img width="300" height="150" src="{% static 'assets/img/products/tir_in.png'%}">
               </a>
               <h4><a  href="{% url 'int_tir' %}">Interaktiv o'q otish tiri.</a></h4>
               <p>Interaktiv o'q otish tiri barcha yopiq turdagi tirlarni jamlanmasidir</p>
@@ -84,7 +138,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <a href="{% url 'laser_tir' %}">
-              <img width="300" height="150" src="media/images/products/pkst.png">
+              <img width="300" height="150" src="{% static 'assets/img/products/pkst.png'%}">
               </a>
               <h4><a href="{% url 'laser_tir' %}">Lazer o'q otish tiri</a></h4>
               <p>Lazerdan o'q otish tiri boshlang'ich otish tayyorgarligi uchun</p>
@@ -94,7 +148,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <a href="{% url 'panorama' %}">
-              <img width="300" height="150" src="media/images/products/panaram.png">
+              <img width="300" height="150" src="{% static 'assets/img/products/panaram.png'%}">
               </a>
               <h4><a href="{% url 'panorama' %}">Panoramali tir</a></h4>
               <p>Panoramali tir taktik tayyorgarlik uchun ishlab chiqilgan</p>
@@ -104,7 +158,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <a href="{% url 'mobil' %}">
-              <img width="300" height="150" src="media/images/products/mobil.png">
+              <img width="300" height="150" src="{% static 'assets/img/products/mobil.png'%}">
               </a>
               <h4><a href="{% url 'mobil' %}">Sayyor tir</a></h4>
               <p>Sayyor tirni siz istalgan xonaga olib borib ishlatishingiz mumkin</p>
@@ -114,7 +168,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <a href="{% url 'vr' %}">
-              <img width="300" height="150" src="media/images/products/vr.png">
+              <img width="300" height="150" src="{% static 'assets/img/products/vr.png'%}">
               </a>
               <h4><a href="{% url 'vr' %}">VR tir</a></h4>
               <p>VR tir siz xohlagan joyga yurib o'q otish mashg'ulotlarini bajarishingiz mumkin</p>
@@ -124,7 +178,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <a href="{% url 'desant' %}">
-              <img width="300" height="150" src="media/images/products/desant.png">
+              <img width="300" height="150" src="{% static 'assets/img/products/desant.png'%}">
               </a>
               <h4><a href="{% url 'desant' %}">Desantchilar tayyorlash simulyatori</a></h4>
               <p>Havodan yerga tushgungacha barcha amallarni bajaruvchi desantchilar simulyatori</p>
@@ -133,7 +187,7 @@
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <a href="{% url 'pzrk' %}">
-              <img width="300" height="150" src="media/images/products/PZRK.png">
+              <img width="300" height="150" src="{% static 'assets/img/products/PZRK.png'%}">
               </a>
               <h4><a href="{% url 'pzrk' %}">PZRK IGLA-2</a></h4>
               <p>PZRK IGLA-2 trenajori</p>
@@ -142,7 +196,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <a href="{% url 'btr' %}">
-              <img width="300" height="150" src="media/images/products/btr.jpg">
+              <img width="300" height="150" src="{% static 'assets/img/products/btr.jpg'%}">
               </a>
               <h4><a href="{% url 'btr' %}">Zirxli mashinalar trenajori</a></h4>
               <p>BMP-2 va BTR 80 trenajorlari</p>
@@ -151,7 +205,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <a href="{% url 'dpm' %}">
-              <img width="300" height="150" src="media/images/products/dpm.jpg">
+              <img width="300" height="150" src="{% static 'assets/img/products/dpm.jpg'%}">
               </a>
               <h4><a href="{% url 'dpm' %}">Nishon ko'tarish</a></h4>
               <p>Dala sharoitida nishonlarni ko'tarish qurilmasi</p>
@@ -171,7 +225,6 @@
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
             <img src="media/images/maps.jpg" class="img-fluid" alt="">
           </div>
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
           <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
             <div class="content d-flex flex-column justify-content-center">
               <h3>Bugungi kunga kelib o'rnatilgan mahsulotlarimiz soni</h3>
@@ -291,4 +344,65 @@
       </div>
     </section><!-- End Contact Section -->
 
-{% endblock %}
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Shooter<span>.</span></h3>
+              <p>Toshkent Chilonzor S Kvartal 52 UY<br></p>
+                <p>+99 8 90 956 49 09</p>
+                <p>+99 8 97 490 08 50</p>
+                <p><a href="mailto:sherzodkhiva@gmail.com"><strong>📧sherzodkhiva@gmail.com</strong></a> </p>
+              <div class="social-links mt-3">
+                <a href="https://t.me/Shooter_military" class="telegram"><i class="bx bxl-telegram"></i></a>
+                <a href="https://www.instagram.com/shooter.military/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61570921710385" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.youtube.com/@Shooter_military" class="youtube"><i class="bx bxl-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Foydali havolalar</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Bosh sahifa</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Mahsulotlar</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Xizmat ko'rsatish</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Biz haqimizda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Aloqa</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 <strong><span>SHOOTER.UZ</span></strong>. Barcha huquqlar himoyalangan
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+ <!--   <div id="preloader"></div>-->
+ <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ <!-- Vendor JS Files -->
+  <script src="{% static 'web/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'web/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'web/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'web/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'web/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'web/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'web/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
