@@ -334,21 +334,16 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 /* Responsive Styles */
-.int-tir-vid{
-  max-width: 100%;
-    height: auto;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;
-}
+
 video {
     max-width: 100%;
     height: auto;
 }
 .int-tir-vid{
-  max-width: 100%;
-    height: auto;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;
+  width: auto;
+  height: auto;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
 }
 img {
     max-width: 100%;
