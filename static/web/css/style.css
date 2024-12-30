@@ -405,13 +405,19 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 /* Responsive Styles */
+/*video {*/
+/*    width: 100%; !* Make the video width fill the container *!*/
+/*    height: auto; !* Keep the aspect ratio of the video *!*/
+/*    display: block;*/
+/*    margin: 0 auto; !* Centers the video horizontally *!*/
+/*}*/
+
 img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto; /* Rasmni markazlashtirish uchun */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
 }
-
 .video-container {
     position: relative;
     width: 100%;
@@ -428,6 +434,9 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+
+
 
 .row {
     display: grid;
