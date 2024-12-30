@@ -334,6 +334,12 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 /* Responsive Styles */
+.int-tir-vid{
+  max-width: 100%;
+    height: auto;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+}
 video {
     max-width: 100%;
     height: auto;
