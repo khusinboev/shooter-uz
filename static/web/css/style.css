@@ -339,13 +339,8 @@ video {
     max-width: 100%;
     height: auto;
 }
-.int-tir-vid{
-  width: auto;
-  height: auto;
-  justify-content: center; /* Centers horizontally */
-  align-items: center;
-}
-img {
+
+img .int-tir-vid{
     max-width: 100%;
     height: auto;
     justify-content: center; /* Centers horizontally */
