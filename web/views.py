@@ -19,7 +19,7 @@ def laser_tir(request):
 
 
 def panorama(request):
-    return render(request, "panarama.html")
+    return render(request, "panorama.html")
 
 
 def btr(request):
