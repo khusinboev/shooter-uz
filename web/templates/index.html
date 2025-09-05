@@ -81,12 +81,19 @@
 
   <!-- ======= Hero Section ======= -->
   <div class="video-container">
-    <video autoplay muted><source src="media/videos/kirish.mp4" type="video/mp4"></video>
+    <video autoplay muted playsinline loop data-src="media/videos/kirish.mp4" poster="{% static 'web/media/videos/poster.jpg' %}">
+      <source src="media/videos/kirish.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Shooter.uz</h1>
+      <p>Harbiy simulyatorlar va trenajorlar</p>
+    </div>
   </div>
-<!--  <img src="media/images/new2.png" style="width: 100%; max-height: 100vh; height: auto;">-->
+  <!--  <img src="media/images/new2.png" style="width: 100%; max-height: 100vh; height: auto;">-->
 
-  <!--  <section >-->
-<!--  </section>-->
+    <!--  <section >-->
+  <!--  </section>-->
 
         <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
