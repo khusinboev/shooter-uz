@@ -38,3 +38,6 @@ dist/
 
 # Pytest cache
 .cache/
+"db.sqlite3" 
+".env" 
+"error.log" 
