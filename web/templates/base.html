@@ -7,10 +7,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>{% block title %}Shooter.uz - Harbiy simulyatorlar va trenajorlar{% endblock %}</title>
-  <meta content="Harbiy simulyatorlar, o'q otish tirlari, desantchilar trenajorlari, PZRK simulyatorlari" name="description">
-  <meta content="harbiy simulyator, o'q otish tiri, desantchi trenajori, PZRK, zirhli mashina simulyatori" name="keywords">
+  <meta content="O'zbekistonda harbiy simulyatorlar, o'q otish tirlari, desantchilar va PZRK trenajorlarini ishlab chiqaruvchi yetakchi kompaniya - Shooter.uz. Xavfsiz va samarali harbiy tayyorgarlik uchun zamonaviy yechimlar." name="description">
+  <meta content="harbiy simulyatorlar, o'q otish tiri, desantchilar trenajori, PZRK, BTR, DPM, o'quv qurollari, harbiy texnika simulyatsiyasi, Shooter.uz, O'zbekiston harbiy" name="keywords">
 
-  <!-- Favicons -->
   <link href="media/images/icons/traceQora.svg" rel="icon">
   <link href="media/images/icons/traceQora.svg" rel="apple-touch-icon">
 
@@ -38,39 +37,34 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <a href="/" class="logo me-auto me-lg-0">
-        <img src="media/images/icons/traceOq.svg" alt="Shooter.uz Logo" width="150" height="40" loading="lazy">
-      </a>
+      <h1 class="logo me-auto me-lg-0"><a href="/">Shooter.uz<span>.</span></a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="/">Bosh sahifa</a></li>
-          <li><a class="nav-link scrollto" href="/#about">Xizmat ko'rsatish</a></li>
+          <li><a class="nav-link scrollto" href="/#about">Biz haqimizda</a></li>
           <li class="dropdown">
-            <a href="/#services"><span>Mahsulotlar</span> <i class="bi bi-chevron-down"></i></a>
+            <a href="/#products"><span>Mahsulotlar</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li class="dropdown">
-                <a><span>Tirlar</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a><span>Tirlar</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="{% url 'int_tir' %}">Interaktiv o'q otish tiri</a></li>
-                  <li><a href="{% url 'laser_tir' %}">Lazer o'q otish tiri</a></li>
-                  <li><a href="{% url 'panorama' %}">Panoramali tir</a></li>
-                  <li><a href="{% url 'mobil' %}">Sayyor tir</a></li>
-                  <li><a href="{% url 'vr' %}">VR tir</a></li>
+                  <li><a href="/int_tir">Interaktiv o'q otish tiri</a></li>
+                  <li><a href="/lasertir">Lazer o'q otish tiri</a></li>
+                  <li><a href="/panorama">Panoramali tir</a></li>
+                  <li><a href="/mobil">Sayyor tir</a></li>
+                  <li><a href="/vr">VR tir</a></li>
                 </ul>
               </li>
-              <li class="dropdown">
-                <a><span>Desantchilar uchun</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a><span>Desantchilar uchun</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="{% url 'desant' %}">Desantchilar tayyorlash simulyatori</a></li>
-                  <li><a href="{% url 'pzrk' %}">PZRK IGLA-2</a></li>
-                  <li><a href="{% url 'btr' %}">Zirxli mashinalar trenajori</a></li>
+                  <li><a href="/desant">Desantchilar tayyorlash simulyatori</a></li>
+                  <li><a href="/pzrk">PZRK IGLA-2</a></li>
+                  <li><a href="/btr">Zirxli mashinalar trenajori</a></li>
                 </ul>
               </li>
-              <li class="dropdown">
-                <a><span>Nishonlar</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a><span>Nishonlar</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="{% url 'dpm' %}">Nishon ko'tarish</a></li>
+                  <li><a href="/dpm">Nishon ko'tarish</a></li>
                 </ul>
               </li>
             </ul>
@@ -78,10 +72,11 @@
           <li><a class="nav-link scrollto" href="/#contact">Aloqa</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+<!--      <a href="/#contact" class="get-started-btn scrollto">Bog'lanish</a>-->
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <!-- Main content -->
   <main id="main">
