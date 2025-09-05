@@ -285,6 +285,9 @@ img {
   background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
   z-index: 999;
+  /* Balandlikni to'liq ekran qilish uchun */
+  height: 100vh; /* Yoki min-height: 100%; */
+  overflow-y: auto; /* Scroll qo'shish uchun, agar kerak bo'lsa */
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -305,6 +308,9 @@ img {
   overflow-y: auto;
   transition: 0.3s;
   border-radius: var(--border-radius);
+  /* Balandlikni to'liq foydalanish uchun */
+  height: calc(100% - 70px); /* Top va bottom paddinglarni hisobga olgan holda */
+  min-height: 300px; /* Minimal balandlikni kafolatlash */
 }
 
 .navbar-mobile a,
